@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>main</title>
+<style>
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, 
+	.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+	.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+	.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+	.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, 
+	.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+	.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, 
+	.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+	.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, 
+	.col-xs-10,.col-sm-10, .col-md-10, .col-lg-10,
+	.col-xs-11,.col-sm-11, .col-md-11, .col-lg-11, 
+	.col-xs-12,.col-sm-12, .col-md-12, .col-lg-12 {
+		border:1px solid red;
+		padding:10px;
+		}
+   .rows{ /*그리드 시스템사이에 거리를 주기 위해서*/
+		margin-bottom:4px;
+		margin-top:4px;
+		color:white;
+	}
+	#tb {
+	border-spacing:15px;
+	}
+	
+	.ft{
+	clear:both;
+	padding-top:100px;
+	}
+	
+	
+    </style>
+    <!-- 부트스트랩 -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js 
+    IE의 버전이 낮은 경우에는 html에 대한 태그가 인식X-> 인식을 시켜주는 옵션
+    --> 
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-color:gray;">
+    <div class="containers">
+    	<nav class="navbar navbar-inverse" role="navigation">
+    		<div><!-- mobile 태그 입력 -->
+    		<div class="logo"></div><!-- 로고이미지들어감 -->
+    		
+    		<form>
+				<div class="form-group">
+					<input type="text" class="form-control">
+				</div>
+				<a href="#"><span class="glyphicon glyphicon-search"></span></a><!-- 아이콘들어감 -->
+			</form>
+			
+			
+    			<ul class="nav navbar-nav">
+    				<li><a href="#">HOME</a></li>
+    				<li><a href="#">STORE</a></li>
+    				<li><a href="#">COMMUNITY</a></li>
+    				<li><a href="#">SUPPORT</a></li>
+    			</ul>
+    			<div class="navbar-right" style="margin-right:15px;">
+    				<ul class="nav navbar-nav">
+    				<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+					<li class="dropdown">
+			        <a href="#" data-toggle="dropdown">
+			        <span class="glyphicon glyphicon-user">
+				        <ul class="dropdown-menu">
+				             <li><a href="#">회원로그인</a></li>
+				             <li><a href="#">자유게시판</a></li>
+				             <li><a href="#">설문조사</a></li>
+				        </ul>
+			        	</span>
+			          </a>
+			          </li> 
+                   </ul>
+                </div>
+    		</div>
+    	</nav>
+		</div>
+		<div class="rows">
+         <div class="col-md-1"></div><!-- 왼쪽여백 -->
+         <div class="col-md-10">
+			<center>
+         	<article> 													<!-- Animation Area -->
+         		<img src="../img/img1.jpg" width=90% height=550px;>
+         	</article>
+         	<article style=margin-top:100px;> 							<!-- Best Seller Container -->
+         	
+         	<table id="tb" border="5" width="90%"><!--  -->
+         		<tr>
+         			<th colspan="4"><h4>Best Seller</h4></th>
+         			<th style=float:right; ><a href="#"><h4>More<h4></h4></a></th>
+         		</tr>
+         		<tr align="center">
+         			<td><a href="#"><img src="../img/thum1.png" width=100% height=250px/></a></td>
+         			<td><a href="#"><img src="../img/thum1.png" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum1.png" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum1.png" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum1.png" width=100% height=250px;/></a></td>
+         		</tr>
+         	</table>
+         	
+         	</article>
+         	<article style=margin-top:50px;>
+         	<table width=90%>
+         		<tr>
+         			<th colspan="4"><h4>Discount</h4></th>
+         			<th style=float:right; ><a href="#"><h4>More<h4></h4></a></th>
+         		</tr>
+         		<tr align="center">
+         			<td><a href="#"><img src="../img/thum2.jpg" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum2.jpg" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum2.jpg" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum2.jpg" width=100% height=250px;/></a></td>
+         			<td><a href="#"><img src="../img/thum2.jpg" width=100% height=250px;/></a></td>
+         		</tr>
+         	</table>
+         	</article>
+         	</center>
+         </div>
+         <div class="col-md-1"></div><!-- 오른쪽여백 -->
+		</div>
+	
+	
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+  <footer>
+         <div class="ft">
+         <center>
+         	<table class="navbar navbar-inverse" width=100%>
+         		<tr>
+         			<td style="text-align:center; color:white; padding:50px;">
+         			© 2022, Epic Games, Inc. All Rights Reserved. Epic, Epic Games, Epic Games 로고, Fortnite, Fortnite 로고,<br>
+         			Unreal, Unreal Engine, Unreal Engine 로고, Unreal Tournament, Unreal Tournament 로고의 모든 저작권은 Epic Games, Inc.에 있으며, 이는 미국 및 그 외 국가에 모두 해당됩니다.<br>
+         			기타 브랜드 또는 제품 이름은 해당 소유자의 상표입니다. 미국 외 거래는 Epic Games International, S.à r.l.을 통해 이뤄집니다. 
+         			</td>
+         		</tr>
+         	</table>
+         </center>
+         </div>
+         </footer>
+</html>
